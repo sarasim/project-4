@@ -1,0 +1,22 @@
+.welcome {
+  background:
+  url('./images/red-planet2.jpg') no-repeat;
+  font-family: 'Robotic', sans-serif;
+  font-weight: 100;
+
+    h1{
+      text-transform: uppercase;
+    }
+
+    .enter & {
+      border-radius: 50%;
+      display: block;
+      width: 75%;
+      height: 75%;
+    }
+
+    h2 {
+      color: white;
+
+  }
+}

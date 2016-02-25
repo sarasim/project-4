@@ -1,4 +1,19 @@
 <div class="check-in">
-
-
+  <h1>Register</h1>
+    <div class="register-form"
+         action=""
+         ng-submit="login()"
+         ng-class="{ invalid: validate }">
+      <input type="text" placeholder="Name" ng-model="colonist.name "
+              ng-change="checkValid()" />
+      <input type="number" placeholder="Age" ng-model="colonist.age"
+               ng-change="checkValid()" />
+      <input type="text" placeholder="Select Occupation" ng-change="checkValid()" >
+      <select name="jobs" id="jobs" ng-model="colonist.job_id">
+          <option value=""> -- Select Occupation -- </option>
+          <option value="{{ job.id }}" ng-repeat="job in jobs">{{ job.name }}</option>
+      </select>
+  <!--this needs to be a drop-down-->
+      <button class="check-in-button" ng-click="login($event)">Check in</button>
+    </div>
 </div>

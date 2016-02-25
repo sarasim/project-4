@@ -1,0 +1,19 @@
+.report {
+  background-color: black;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  text-align: left;
+  width: 100vw;
+
+  h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  span {
+    text-align: center;
+  }
+}

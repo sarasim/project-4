@@ -1,0 +1,44 @@
+@keyframes invalid {
+  0% {border: 1px solid transparent;
+  }
+  100% {border: 1px solid red;
+  }
+}
+
+.invalid {
+  animation: invalid 1s infinite;
+}
+
+.check-in {
+  background: black;
+  color: white;
+  height: 100vh;
+  text-align:center;
+  width: 100vw;
+}
+
+.register-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 80%;
+
+   input & {
+    border-bottom: 2px solid white;
+    background-color: black;
+    border: none;
+    color: #ed4343;
+    padding-bottom: .25rem;
+  }
+
+}
+
+.check-in-button {
+  background-color: black;
+  border: none;
+  color:white;
+  font-size: 2rem;
+}
