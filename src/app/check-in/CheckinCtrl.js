@@ -6,7 +6,7 @@
     .controller('CheckinCtrl', CheckinCtrl);
 
   /** @ngInject */
-  function CheckinCtrl($scope, $http) {
+  function CheckinCtrl($scope, $http, $rootScope, $state, $cookies) {
       var JOBS_GET_URL =
       'https://red-wdp-api.herokuapp.com/api/mars/jobs';
 
@@ -18,6 +18,9 @@
 
 //placeholder object for POST request to colonists
       $scope.colonist = {};
+      $scope.showValidation = false;
+
+      $cookies.putObject('mars_user', undefined);
 
 //GET - fetch all jobs
       $http({
@@ -29,9 +32,12 @@
             // TODO: Handle error
       });
 
-
       $scope.login = function(event){
          event.preventDefault();
+
+         if($scope.checkinForm.$invalid){
+           $scope.showValidation = true;
+         } else {
 
         $http({
           method: 'POST',
@@ -40,34 +46,17 @@
             'colonist': $scope.colonist
           }
         }).then(function(response){
-            console.log(response);
-        }, function(error){
-            console.log(error);
+          // $rootScope.colonist = response.data.colonist;
+          // $state.go('encounters');
+
+          $cookies.putObject('mars_user', response.data.colonist);
+          $state.go('encounters');
         });
 
-    };
- //
- //    $scope.login = function(event){
- //      event.preventDefault();
- //
- //    function CheckinCtrl($scope, jobs){
- //      $scope.validate = false;
- //      $scope.jobs = Jobs
- //
- //
- //
- //      $scope.checkValid = function(){
- //      		if($scope.validate && $scope.newTodo.length) {
- //          		$scope.validate.false;
- //          }
- //       }
- //      $scope.checkValid = function(){
- //    if($scope.validate && $scope.newTodo.length) {
- //        $scope.validate.false;
- //    }
- // }
- //    }
+      }
 
- }
+      };
+
+   }
 
 })();

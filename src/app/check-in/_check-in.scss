@@ -1,28 +1,42 @@
 @keyframes invalid {
-  0% {border: 1px solid transparent;
+  0% {outline: 3px solid transparent;
   }
-  100% {border: 1px solid red;
+  100% {outline: 3px solid red;
   }
 }
 
-.invalid {
-  animation: invalid 1s infinite;
+.show-validation {
+  transition: 1s linear all;
+}
+.show-validation {
+  input, select, textarea {
+    &.ng-invalid {
+      animation: invalid 1s infinite;
+    }
+  }
 }
 
 .check-in {
   background: black;
   color: white;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   text-align:center;
   width: 100vw;
+
+    h1{
+      padding: 2rem 1rem;
+    }
 }
 
-.register-form {
+.check-in-form {
   align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  padding: 0 2rem;
   margin-bottom: 1.5rem;
   width: 80%;
 

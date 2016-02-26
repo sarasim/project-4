@@ -2,16 +2,17 @@
   <h1>Report Encounter
     <span> Safety on Mars is your responsibility</span>
   </h1>
-  <div class="report-form"
+  <form class="report-form"
+      name="reportForm"
       action=""
       ng-submit="submitReport()"
-      ng-class="{ invalid: validate }">
-      <select name="aliens" id="aliens" ng-model="encounter_atype">
+      ng-class="{ show-validation : show-validation }">
+      <select name="aliens" id="aliens" ng-model="encounter.atype">
           <option value="" placeholder="Select alien type"></option>
-          <option value="{{ aliens.type }}" ng-repeat="aliens in aliens">{{ aliens.type }}</option>
+          <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
       </select>
-      <textarea placeholder="Action taken" ng-model="encounter.action" name="Action_taken" id rows="10"></textarea>
-      <button class="submit-button" ng-click="submitReport($event, reportForm)">Submit Report</button>
+      <textarea ng-model="encounter.action" placeholder="Action taken"></textarea>
+      <button class="submit-report" ng-click="submitReport($event)">Submit Report</button>
 
-  </div>
+  </form>
 </div>

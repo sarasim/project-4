@@ -6,8 +6,10 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($scope) {
-      $scope.description = 'Angular Seed Application';
+  function MainController($scope, $state) {
+      $scope.nextPage = function(){
+        $state.go('check-in');
+      };
   }
 
 })();
