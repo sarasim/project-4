@@ -1,15 +1,15 @@
 <div class="check-in">
   <h1>Register</h1>
-    <form class="check-in-form"
-          name="checkinForm"
+    <form name="checkinForm"
          action=""
          ng-submit="checkinForm.valid"
          ng-class="{'show-validation' : showValidation}" novalidate>
-      <input type="text"
+      <input class="form-input"
+            type="text"
              placeholder="Name"
              ng-model="colonist.name " required/>
 
-      <input type="number"
+      <input class="form-input" type="number"
              placeholder="Age"
              ng-model="colonist.age" required/>
 
@@ -23,7 +23,3 @@
       <button class="check-in-button" ng-click="login($event)">Check in</button>
     </form>
 </div>
-
-
-  <!-- ng-change="checkValid()"
-   ng-change="checkValid()" -->

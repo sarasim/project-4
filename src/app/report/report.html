@@ -6,12 +6,12 @@
       name="reportForm"
       action=""
       ng-submit="submitReport()"
-      ng-class="{ show-validation : show-validation }">
-      <select name="aliens" id="aliens" ng-model="encounter.atype">
+      ng-class="{'show-validation' : showValidation}" novalidate>
+      <select name="aliens" id="aliens" ng-model="encounter.atype" required>
           <option value="" placeholder="Select alien type"></option>
           <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
       </select>
-      <textarea ng-model="encounter.action" placeholder="Action taken"></textarea>
+      <textarea ng-model="encounter.action" placeholder="Action taken" required></textarea>
       <button class="submit-report" ng-click="submitReport($event)">Submit Report</button>
 
   </form>

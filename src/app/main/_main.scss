@@ -8,16 +8,18 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  align-content: center;
   flex-direction: column;
 
     h1{
+      padding-top: 3rem;
       text-transform: uppercase;
     }
 
     h2 {
       display: block;
       text-align: center;
-
+      font-weight: 100;
   }
 }
 
@@ -25,15 +27,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60%;
+  width: 60%;
 }
 
 .enter-button {
   animation: pulse 2s infinite;
   border-radius: 50%;
   border:none;
+  color: lightred;
   width: 75px;
   height: 75px;
-  opacity: 1.5;
+  opacity: 0.2;
 
   &:hover {
     cursor: pointer;
@@ -42,7 +47,7 @@
 
 @keyframes pulse {
   0% {
-    background-color: transparentize(lightgrey, .5);;
+    background-color: transparentize(lightgrey, .2);;
     box-shadow: 0 0 0 0 lightgray;
   }
 

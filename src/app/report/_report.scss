@@ -1,14 +1,15 @@
 .report {
   background-color: black;
   display: flex;
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  flex-dirction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  text-align: left;
   width: 100vw;
 
   h1{
-    font-family: 'Roboto', sans-serif;
+
     font-weight: 100;
     text-align: center;
   }
@@ -16,4 +17,8 @@
   span {
     text-align: center;
   }
+}
+
+.report-form {
+
 }

@@ -1,21 +1,3 @@
-@keyframes invalid {
-  0% {outline: 3px solid transparent;
-  }
-  100% {outline: 3px solid red;
-  }
-}
-
-.show-validation {
-  transition: 1s linear all;
-}
-.show-validation {
-  input, select, textarea {
-    &.ng-invalid {
-      animation: invalid 1s infinite;
-    }
-  }
-}
-
 .check-in {
   background: black;
   color: white;
@@ -27,10 +9,11 @@
 
     h1{
       padding: 2rem 1rem;
+      font-size: 3rem;
     }
-}
+  }
 
-.check-in-form {
+  form {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -40,19 +23,21 @@
   margin-bottom: 1.5rem;
   width: 80%;
 
-   input & {
+
+   .form-input {
     border-bottom: 2px solid white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
     background-color: black;
-    border: none;
     color: #ed4343;
     padding-bottom: .25rem;
   }
 
-}
-
-.check-in-button {
+  .check-in-button {
   background-color: black;
   border: none;
   color:white;
   font-size: 2rem;
+  }
 }
