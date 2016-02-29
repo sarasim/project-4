@@ -12,12 +12,12 @@
       font-weight: lighter;
       text-align: center;
     }
-  }
+}
 
-  .check-in-form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem;
+.check-in-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
 
     .form-input {
       background-color: black;
@@ -29,20 +29,7 @@
       margin-bottom:  1.5rem;
       padding-left: .5rem;
       width: 100%;
-
-      ::-webkit-input-placeholder {
-        color: #ed4343;
-        }
-      :-moz-placeholder {
-        color:    #ed4343;
-        }
-      ::-moz-placeholder {
-        color:    #ed4343;
-        }
-      :-ms-input-placeholder {
-        color:    #ed4343;
-          }
-      }
+    }
 
     .select-job {
       background-color: black;

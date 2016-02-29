@@ -1,7 +1,6 @@
 .encounters {
   display:flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
   height: 100vh;
   position: relative;
   width: 100vw;
@@ -21,7 +20,7 @@
   span {
     color: #000;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
    }
 
@@ -30,11 +29,10 @@
 .list-encounters {
   font-size:18px;
   list-style: none;
-  line-height: 1.5;
   overflow: scroll;
   padding: 0 1rem 2rem;
 
-  .list-encounters li {
+   li {
     margin-bottom: 1rem;
    }
 }
@@ -48,7 +46,6 @@
   position: fixed;
   text-align: center;
   width: 100%;
-  z-index: 1;
 
   .encounters-button {
     border: none;

@@ -25,9 +25,6 @@ header {
 
 .report-form {
   display: flex;
-  flex-grow: 4;
-  flex-shrink: 1;
-  flex-basis: 0%;
   flex-direction: column;
   font-size: 18px;
   padding: 0 2rem;
@@ -40,14 +37,14 @@ header {
     padding: 0;
     width: 100%;
 
-      select {
-        background-color: black;
-        border: none;
-        color: #ed4343;
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-        width: 100%;
-      }
+    select {
+      background-color: black;
+      border: none;
+      color: #ed4343;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      width: 100%;
+    }
   }
 
   .action-box {

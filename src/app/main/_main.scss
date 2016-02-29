@@ -2,7 +2,7 @@
   align-content: center;
   align-items: center;
   background:
-  url('./images/red-planet2.jpg') no-repeat center;
+  url('./images/planet.jpg') no-repeat center;
   color: white;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,6 @@
     h2 {
       display: block;
       font-weight: 100;
-      padding-top: 5rem;
       text-align: center;
   }
 }
@@ -47,7 +46,6 @@
   animation: pulse 3s infinite;
   border-radius: 50%;
   border:none;
-  color: lightred;
   height: 75px;
   opacity: 0.2;
   width: 75px;
