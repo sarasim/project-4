@@ -1,24 +1,75 @@
 .report {
-  background-color: black;
+  background-color: #000;
   display: flex;
-  font-size: 18px;
-  flex-dirction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction:column;
   height: 100vh;
   width: 100vw;
+}
 
-  h1{
+header {
+  color: lightgrey;
+  line-height: 0.5;
+  padding: 2rem 1rem;
 
-    font-weight: 100;
-    text-align: center;
-  }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
 
-  span {
-    text-align: center;
-  }
+    span {
+      display: block;
+      font-size: 1.2rem;
+      text-align: center;
+    }
 }
 
 .report-form {
+  display: flex;
+  flex-grow: 4;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  font-size: 18px;
+  padding: 0 2rem;
+  width: 90%;
+
+  .select-report {
+    border-bottom: 1px solid #fff;
+    display: block;
+    height: 2rem;
+    padding: 0;
+    width: 100%;
+
+      select {
+        background-color: black;
+        border: none;
+        color: #ed4343;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+      }
+  }
+
+  .action-box {
+    font-size: 1.2rem;
+    height: 10rem;
+    margin-top:1.5rem;
+    padding: .5rem;
+  }
+
+  .report-button {
+    background-color: black;
+    border: none;
+    color: lightgrey;
+    font-size: 2rem;
+    font-weight: 100;
+    height: 10rem;
+    padding: 2rem 4rem;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
 }

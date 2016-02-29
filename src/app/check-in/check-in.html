@@ -1,25 +1,27 @@
 <div class="check-in">
   <h1>Register</h1>
-    <form name="checkinForm"
+    <form class="check-in-form"
+         name="checkinForm"
          action=""
          ng-submit="checkinForm.valid"
          ng-class="{'show-validation' : showValidation}" novalidate>
       <input class="form-input"
-            type="text"
+             type="text"
              placeholder="Name"
              ng-model="colonist.name " required/>
-
-      <input class="form-input" type="number"
+      <input class="form-input"
+             type="number"
              placeholder="Age"
              ng-model="colonist.age" required/>
-
-      <select name="jobs" id="jobs"
+      <div class="select-job">
+        <select name="jobs" id="jobs"
               ng-model="colonist.job_id" required>
-
-          <option value=""> -- Select Occupation -- </option>
-          <option value="{{ job.id }}" ng-repeat="job in jobs">{{ job.name }}</option>
-      </select>
-  <!--this needs to be a drop-down-->
-      <button class="check-in-button" ng-click="login($event)">Check in</button>
+          <option value class="placeholder"> Select Occupation </option>
+          <option value="{{ job.id }}"
+                  ng-repeat="job in jobs">{{ job.name }}</option>
+        </select>
+      </div>
+      <button class="check-in-button"
+              ng-click="login($event)">Check in</button>
     </form>
 </div>

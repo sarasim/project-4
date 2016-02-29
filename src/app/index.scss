@@ -8,12 +8,12 @@
 @import "check-in/check-in";
 @import "encounters/encounters";
 @import "report/report";
-@import "report/report-filed";
+@import "page-animations";
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
 $red-color: #ed4343;
-$red-font: 'Roboto', serif;
+$red-font: 'Roboto', sans-serif;
 
 html, body {
   width:100%;
@@ -21,6 +21,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: $red-font;
+  font-size: 18px;
 }
 
 .browsehappy {
@@ -59,113 +60,6 @@ h1{
   }
 }
 
-[ui-view].ng-enter, [ui-view].ng-leave {
-  transition: all 1s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-
-[ui-view].ng-enter {
-
-  .home &{
-  transform: translate3d(0,-100%,0);
-  opacity: 0
-
-  }
-
-  .check-in & {
-   transform: translate3d(0,-100%,0);
-    opacity: 0;
-  }
-
-  .encounters & {
-    transform: translate3d(0,-100%,0);
-    opacity: 0;
-  }
-
-  .report & {
-    transform: translate3d(0,-100%,0);
-    opacity: 0;
-  }
-
-}
-
-[ui-view].ng-enter-active {
-
-  .main &{
-    transform: translate3d(0,-100%,0);
-    opacity: 1;
-
-  }
-
-  .check-in & {
-    transform: translate3d(0,-100%,0);
-    opacity: 1;
-  }
-
-  .encounters & {
-    transform: translate3d(0,-100%,0);
-    opacity: 1;
-  }
-
-  .report & {
-    transform: translate3d(0,-100%,0);
-    opacity: 1;
-  }
-
-}
-
-
- [ui-view].ng-leave {
-   .main &{
-     transform: translate3d(0,-100%,0);
-     opacity: 0
-
-   }
-
-   .check-in & {
-     transform: translate3d(0,-100%,0);
-    opacity: 0;
-   }
-
-   .encounters & {
-     transform: translate3d(0,-100%,0);
-    opacity: 0;
-   }
-
-   .report & {
-     transform: translate3d(0,-100%,0);
-    opacity: 0;
-   }
-
- }
-
- [ui-vew].ng-leave-active {
-   .main &{
-     transform: translate3d(0,-100%,0);
-     opacity: 1;
-
-   }
-
-   .check-in & {
-     transform: translate3d(0,-100%,0);
-      opacity: 1;
-   }
-
-   .encounters & {
-     transform: translate3d(0,-100%,0);
-    opacity: 1;
-   }
-
-   .report & {
-     transform: translate3d(0,-100%,0);
-      opacity: 1;
-   }
-
- }
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

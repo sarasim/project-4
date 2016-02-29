@@ -1,18 +1,24 @@
 <div class="report">
-  <h1>Report Encounter
-    <span> Safety on Mars is your responsibility</span>
-  </h1>
+  <header>
+    <h1>Report Encounter</h1>
+    <span> Safety on Mars is Your Responsibility</span>
+  </header>
   <form class="report-form"
       name="reportForm"
       action=""
       ng-submit="submitReport()"
       ng-class="{'show-validation' : showValidation}" novalidate>
-      <select name="aliens" id="aliens" ng-model="encounter.atype" required>
-          <option value="" placeholder="Select alien type"></option>
-          <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
-      </select>
-      <textarea ng-model="encounter.action" placeholder="Action taken" required></textarea>
-      <button class="submit-report" ng-click="submitReport($event)">Submit Report</button>
-
+      <div class="select-report">
+        <select name="aliens" id="aliens"
+              ng-model="encounter.atype" required>
+          <option value class="placeholder">Select alien type</option>
+          <option value="{{ alien.type }}"
+                  ng-repeat="alien in aliens">{{ alien.type }}</option>
+        </select>
+      </div>
+      <textarea class="action-box" ng-model="encounter.action"
+                placeholder="Action taken" required></textarea>
+      <button class="report-button"
+              ng-click="submitReport($event)">Submit Report</button>
   </form>
 </div>
