@@ -18,7 +18,9 @@
       </div>
       <textarea class="action-box" ng-model="encounter.action"
                 placeholder="Action taken" required></textarea>
-      <button class="report-button"
-              ng-click="submitReport($event)">Submit Report</button>
+      <div class="report-button-wrapper">
+        <button class="report-button"
+                ng-click="submitReport($event)">Submit Report</button>
+      </div>
   </form>
 </div>

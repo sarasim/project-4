@@ -21,7 +21,9 @@
                   ng-repeat="job in jobs">{{ job.name }}</option>
         </select>
       </div>
-      <button class="check-in-button"
+      <div class="button-wrapper">
+        <button class="check-in-button"
               ng-click="login($event)">Check in</button>
+      </div>
     </form>
 </div>
