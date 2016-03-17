@@ -60,6 +60,30 @@ h1{
   }
 }
 
+.page-footer {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex: 1 1 0%;
+  height: 10rem;
+  justify-content: center;
+  width: 100%;
+
+  h2 {
+    background-color: transparent;
+    color: lightgrey;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      }
+  }
+
+}
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

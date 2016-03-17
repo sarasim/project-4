@@ -58,27 +58,27 @@
      }
     }
 
-    .button-wrapper {
-      background-color: transparent;
-      display: flex;
-      flex: 1 1 0%;
-      height: 10rem;
-      padding: 2rem 4rem;
-      text-align: center;
-      width: 100%;
-
-      .check-in-button {
-        background-color: transparent;
-        border: none;
-        color: lightgrey;
-        font-size: 2rem;
-        font-weight: 100;
-        width: 100%;
-
-          &:hover {
-            cursor: pointer;
-        }
-      }
-    }
+    // .button-wrapper {
+    //   background-color: transparent;
+    //   display: flex;
+    //   flex: 1 1 0%;
+    //   height: 10rem;
+    //   padding: 2rem 4rem;
+    //   text-align: center;
+    //   width: 100%;
+    //
+    //   .check-in-button {
+    //     background-color: transparent;
+    //     border: none;
+    //     color: lightgrey;
+    //     font-size: 2rem;
+    //     font-weight: 100;
+    //     width: 100%;
+    //
+    //       &:hover {
+    //         cursor: pointer;
+    //     }
+    //   }
+    // }
 
  }
