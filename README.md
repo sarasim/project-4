@@ -1,19 +1,17 @@
-## AngularJS - Seed application
+# Project 4 - AngularJS Mars Colony App
 
-This repository contains the basic application scaffold for **Project 4**. <br>
-It is based on the [generator-angular](https://github.com/yeoman/generator-angular)  application boilerplate.
+## Project Summary
+We built a one page app with AngularJS that reports alien encounters on Mars and the actions taken when the encounters occur. The app records the user information given on the check-in page, shows encounters from other reports, and offers the opportunity to file a new report that will then be included in history of encounters.
 
-To install this project on your computer:
+## Tools Used
+- AngularJS, including:
+	- Directives: ng-repeat, ng-click, ng-class, ng-animate
+	- Modules: Controller, Directive
+	- ui-router plug-ins
+	- Ajax GET and POST requests
+- CSS animations
 
-Step 1 : Create a directory for on your computer and clone this repository:
+## Experiences
+Learning how to use the AngularJS framework has been a rewarding process, especially figuring out how Angular watches the DOM and applies changes through data-binding and $scope.  By its ability to manipulate the DOM dynamically, AngularJS provides us with a great toolset that I cannot wait to explore further.
 
-	git clone https://github.com/redacademy/angular-project.git .
-    
-Step 2 : From the project's root directory, install the project dependencies:
-	
-    npm install && bower install
-    
-Step 3 : The project should now be installed. Start the local development server by typing:
-
-	gulp serve
-
+Learning how to make cool animations both with CSS and Angular has been really interesting but I need to continue to refine these skills.

@@ -31,9 +31,7 @@
             // TODO: Handle error
       });
 
-
-
-    $scope.submitReport = function(event){
+     $scope.submitReport = function(event){
        event.preventDefault();
 
 

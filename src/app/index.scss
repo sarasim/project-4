@@ -71,7 +71,7 @@ h1{
 
   h2 {
     background-color: transparent;
-    color: lightgrey;
+    color: #d3d3d3;
     font-size: 2rem;
     font-weight: 100;
     padding: 1rem 2rem;
@@ -79,9 +79,8 @@ h1{
 
     &:hover {
       cursor: pointer;
-      }
+    }
   }
-
 }
 
 /**

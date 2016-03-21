@@ -9,7 +9,7 @@
 }
 
 header {
-  color: lightgrey;
+  color: #d3d3d3;
   line-height: 0.5;
   padding: 2rem 1rem;
 
@@ -55,30 +55,4 @@ header {
     margin-top:1.5rem;
     padding: .5rem;
   }
-
-
-  // .report-button-wrapper {
-  //   background-color: transparent;
-  //   display: flex;
-  //   flex: 1 1 0%;
-  //   height: 10rem;
-  //   justify-content: center;
-  //   padding: 2rem 4rem;
-  //   width: 100%;
-  //
-  //   .report-button {
-  //       background-color: transparent;
-  //       border: none;
-  //       color: lightgrey;
-  //       font-size: 2rem;
-  //       font-weight: 100;
-  //       padding: 2rem 2rem;
-  //       text-align: center;
-  //       width: 100%;
-  //
-  //       &:hover {
-  //         cursor: pointer;
-  //       }
-  //   }
-  // }
 }
